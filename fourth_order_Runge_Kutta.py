@@ -8,7 +8,7 @@
 # dx3/dt = 1/4x2-1/6x3
 # on [0,4]
 
-# Subject to the initial conditions x1(0) = 1, x2(0) = 1, x3(0) = 1$.
+# Subject to the initial conditions x1(0) = 1, x2(0) = 1, x3(0) = 1
 
 
 def RK4OdeSys(f, c, t):
@@ -35,6 +35,4 @@ def model(x, t):
     return dx1dt, dx2dt, dx3dt
 
 # Using Runge-Kutta method
-R_x1 = RK4OdeSys(model, [1, 1, 1], t)
-R_x2 = RK4OdeSys(model, [1, 1, 1], t)
-R_x3 = RK4OdeSys(model, [1, 1, 1], t)
+Rx = RK4OdeSys(model, [1, 1, 1], t)
